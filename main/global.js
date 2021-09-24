@@ -1,0 +1,3 @@
+global.agentes = {
+    nome: "Finka"
+};
