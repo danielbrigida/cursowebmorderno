@@ -1,0 +1,29 @@
+<div>
+    <div id="primeiro"> Primeiro </div>
+    <div></div>
+    <div></div>
+    <span span-attr></span>
+    <div class="ultimo"> Último</div>
+
+</div>
+
+<script>
+    // Pega somente um item ou a primeira ocorrência
+    document.querySelector("#primeiro")
+        .classList.add("first"); 
+
+    // QUERY SELECTALL RETORNA NODE LIST É POSSÍVEL FAZER forEach, porém não é um array     
+    document.querySelectorAll("div")
+        .classList.add("divs");
+
+    document.querySelectorAll("div").forEach(v => console.log(v));    
+
+    document.querySelectorAll("*")
+        .classList.add("todos");   
+        
+    document.querySelectorAll(":not(#primeiro)")
+        .classList.add("nao_primeiro");    
+
+    document.querySelectorAll("[span-attr]")
+        .classList.add("personalizado");        
+</script>

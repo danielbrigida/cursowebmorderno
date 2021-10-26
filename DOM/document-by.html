@@ -1,0 +1,29 @@
+<div>
+    <div id="primeiro"></div>
+    <div></div>
+    <div></div>
+    <div class="ultimo"></div>
+
+</div>
+
+<script>
+    // pega elemento por id
+    // add class no elemento
+    document.getElementById("primeiro")
+        .classList.add("destaque"); 
+    
+    // Pega elemento pelo atributo    
+    const divs = document.getElementsByTagName("div");
+
+    // converte objeto em array
+    Array.from(divs);
+    // OU
+    const divsArray = [...divs];
+    divsArray.forEach(e => e.classList.add("foreach-element"));
+
+    const ultimo = document.getElementsByClassName("ultimo");
+
+    for(let e of ultimo) {
+        e.classList.remove("foreach-element");
+    }    
+</script>
