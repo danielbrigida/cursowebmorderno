@@ -1,0 +1,12 @@
+<div name="principal">
+    <form name= "formulario">
+        <label> Nome: </label>
+        <input type="text" name="nome" value="">
+    </form>
+</div>
+
+<script>
+    console.log(document.getElementsByName("nome"));
+    document.getElementsByName("nome")[0].value = "Daniboy";
+    document.querySelector('input[name=nome]').value = "Daniel Brigida"; 
+</script>

@@ -1,0 +1,37 @@
+<div>
+    <div> Inicio </div>
+    <div>
+        <ul>
+            <li>Frost</li>
+            <li>Grid Lock</li>
+            <li>Leon</li>
+            <li>Alibi</li>
+        </ul>
+    </div>
+    <div> Final</div>
+</div>
+
+<script>
+
+    function log() {
+        console.log(this);
+    }
+    
+    HTMLElement.prototype.log = log;
+    HTMLCollection.prototype.log = log;
+    NodeList.prototype.log = log;
+    Node.prototype.log = log;
+
+    let lista = document.querySelector("div ul");
+
+    // Formato de texto
+    lista.parentNode.log();
+    lista.childNodes.log();
+    lista.firstChild.log();
+
+    // Formato Objeto
+    lista.children.log();
+    lista.firstElementChild.log();
+    lista.lastElementChild();
+
+</script>
