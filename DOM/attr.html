@@ -1,0 +1,17 @@
+<div>
+    <a href="https://www.google.com" id="google"> Google</a>
+
+</div>
+<script>
+    let  link = document.querySelector("#google");
+    console.log(link.getAttribute('href'));
+    console.log(link.href);
+    console.log(link.nodeType);
+    console.log(link.nodeName);
+    console.log(link.firstChild.nodeValue);
+
+    link.href = "https://www.facebook.com";
+    link.innerHTML = "Facebook";
+    link.style = "color:green;";
+    link.setAttribute("style","color:blue;");
+</script>
