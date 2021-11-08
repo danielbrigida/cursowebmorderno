@@ -1,0 +1,20 @@
+<div>
+    <ul id="lista" class="alert" personalizado="personalizado" data-novo="sim">
+        <li>Café</li>
+        <li>Chocolate</li>
+    </ul>
+
+</div>
+<script>
+    let lista  = document.querySelector("#lista");
+    console.log(lista.id);
+    // Atribuitos personalizados precisam utilizar get e set Attribute
+    lista.setAttribute('personalizado','alterado')
+    console.log(lista.getAttribute('personalizado'));
+    console.log(lista.hasAttribute('personalizado'));
+    lista.removeAttribute('class');
+    console.log(lista.dataset);
+    console.log(lista.dataset.novo);
+    console.log(lista.attributes.personalizado);
+
+</script>
