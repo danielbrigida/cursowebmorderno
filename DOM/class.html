@@ -1,0 +1,19 @@
+<div>
+    <ul id="lista" class="alert" personalizado="personalizado" data-novo="sim">
+        <li>Café</li>
+        <li>Chocolate</li>
+    </ul>
+
+</div>
+<script>
+    let lista  = document.querySelector("#lista");
+    let classesLista =  lista.classList;
+    console.log(classesLista);
+
+    classesLista.add("nova_classe");
+    classesLista.remove('alert'); 
+    
+    classesLista.toggle('alert');
+   
+
+</script>
